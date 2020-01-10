@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="283dp"
+        android:layout_height="173dp"
+        android:layout_marginLeft="25dp"
+        app:srcCompat="@android:drawable/divider_horizontal_dim_dark" />
+
+    <EditText
+        android:id="@+id/photoCaption"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:paddingStart="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:text="Enter Caption" />
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/addTagButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="130dp"
+            android:onClick="addTag"
+            android:text="Add Tags" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:onClick="savePhoto"
+            android:text="@string/save_label" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:onClick="cancelAddPhoto"
+            android:text="@string/cancel_label" />
+    </LinearLayout>
+
+</LinearLayout>

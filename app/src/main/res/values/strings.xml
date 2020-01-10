@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PhotoLibraryApp</string>
+    <string name="cancel_label"> Cancel </string>
+    <string name="save_label">Save</string>
+    <string name="album_name"> Album Name</string>
+</resources>

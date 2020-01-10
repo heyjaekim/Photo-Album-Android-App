@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:android=“http://schemas.android.com/apk/res/android”
+    xmlns:appcompat=“http://schemas.android.com/apk/res-auto”
+    >
+    <item android:id="@+id/action_menu"
+        android:icon="@drawable/ic_action_add2"
+        android:title="@string/app_name"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/search"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/app_name"
+        app:showAsAction="always"></item>
+
+<!--    <item android:id="@+id/edit_album"-->
+<!--        android:icon="@drawable/ic_action_edit"-->
+<!--        android:title="@string/album_name"-->
+<!--        app:showAsAction="always">-->
+<!--    </item>-->
+
+<!--    <item android:id="@+id/deleteAlbum"-->
+<!--        android:icon="@drawable/ic_action_delete"-->
+<!--        android:title="@string/app_name"-->
+<!--        app:showAsAction="always"></item>-->
+
+</menu>

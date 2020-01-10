@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:android=“http://schemas.android.com/apk/res/android”
+    xmlns:appcompat=“http://schemas.android.com/apk/res-auto”
+    >
+    <item android:id="@+id/action_menu"
+        android:icon="@drawable/ic_action_add2"
+        android:title="@string/app_name"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/search"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/app_name"
+        app:showAsAction="always"></item>
+
+    <item android:id="@+id/another_menu"
+        android:icon="@drawable/ic_action_more"
+        android:title="@string/app_name"
+        app:showAsAction="always">
+
+        <menu>
+            <item android:id="@+id/deleteMainActivity"
+                android:icon="@drawable/ic_action_delete"
+                android:title="Delete"
+                app:showAsAction="always"></item>
+
+            <item android:id="@+id/editMainActivity"
+                android:icon="@drawable/ic_action_edit"
+                android:title="Edit"
+                app:showAsAction="always"></item>
+        </menu>
+    </item>
+</menu>

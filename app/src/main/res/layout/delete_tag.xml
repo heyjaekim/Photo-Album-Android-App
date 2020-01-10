@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DeleteTag" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/tagTypeId2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="type the tag"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="delete"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="add"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:onClick="saveTag"
+            android:text="save"
+            style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"></ListView>
+</LinearLayout>

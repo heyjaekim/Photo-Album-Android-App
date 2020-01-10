@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:android=“http://schemas.android.com/apk/res/android”
+    xmlns:appcompat=“http://schemas.android.com/apk/res-auto”
+    >
+    <item android:id="@+id/delete"
+        android:icon="@drawable/ic_action_delete"
+        android:title="@string/app_name"
+        app:showAsAction="always"></item>
+
+    <item android:id="@+id/action_menu"
+        android:icon="@drawable/ic_action_more"
+        android:title="@string/app_name"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/edit_photo"
+                android:title="Edit"
+                android:visible="false" />
+            <item android:id="@+id/move_photo"
+                android:title="Move"/>
+            <item android:id="@+id/copy_photo"
+                android:title="Copy"/>
+            <item
+                android:id="@+id/add_photo_tag"
+                android:title="Add Tag"
+                android:visible="false" />
+            <item
+                android:id="@+id/del_photo_tag"
+                android:title="Edit Tag" />
+        </menu>
+    </item>
+</menu>
